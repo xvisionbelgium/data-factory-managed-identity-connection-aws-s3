@@ -1,0 +1,23 @@
+{
+	"name": "contact_parquet",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "PartenaACC",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "PARTENA_ACC"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "contact.parquet",
+				"fileSystem": "adf-debug-container"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
